@@ -446,56 +446,6 @@ edu.app.showLogIn=function(){
 }
 
 //创建课程列表
-////edu.app.showLession=function(){
-//	var oMain=document.getElementById("main");
-//	var oTab=edu.tools.getByClass(oMain,"tab")[0];
-//	var oMainContent=edu.tools.getByClass(oMain,"con")[0];
-//	var oPage=document.getElementById("page");
-//	//创建课程内容
-//	function createLession(data,wrap){
-//		var oPrice=data.price+".00";
-//		wrap.innerHTML='<div class="preview"><img src='+data.middlePhotoUrl+'><p>'+data.name+'</p><em>音频帮</em><span>'+data.learnerCount+'</span><strong>¥'+oPrice+'</strong></div>';
-//		//oMainContent.appendChild(wrap);
-//		console.log(oMainContent);
-//	}
-//	//获取课程内容
-//	function getLession(data){
-//		var oMain=document.getElementById("main");
-//	   // var oMainContent=edu.tools.getByClass(oMain,"con")[0];
-//	   // oMainContent.innerHTML="";
-//	    for(var i=0;i<data.length;i++){
-//	    	var oDiv=document.createElement("div");
-//	    	oDiv.class="conList";
-//	    	createLession(data[i],oDiv);
-//	    }
-//	}
-//	//通过ajax获取课程数据
-//  function changeLession(iPage,iType){
-//  	if(document.body.clientWidth>1205){
-//  		iPsize=20;
-//  	}else{
-//  		iPsize=15;
-//  	}
-//  	edu.tools.ajax("get","http://study.163.com/webDev/couresByCategory.htm","pageNo="+iPage+"&psize="+iPsize+"&type="+iType,function(data){
-//  		var oData=JSON.parse(data);
-//  		var aList=oData.list;
-//  		getLession(aList);
-//  		
-//  		oMainContent.innerHTML="";
-    		
-//  		page({
-//  			id:"page",
-//  			pageNow:oData.pagination.pageIndex,
-//  			pageAll:Math.ceil(oData.totlePageCount/iPsize)
-//  		});
-//  	});
-//  }
-//	changeLession(1,10);
-//		
-//	}//创建课程列表结束
-
-
-//创建课程列表
 edu.app.showLesson=function(){
 	var oMain=document.getElementById("main");
 	var oLesson=edu.tools.getByClass(oMain,"con")[0];
